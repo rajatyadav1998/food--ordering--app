@@ -1,9 +1,12 @@
 {
+  "homepage": "https://rajatyadav1998.github.io/food--ordering--app",
   "name": "akshay-saini",
   "version": "1.0.0",
   "description": "\"I am fkking champ\"",
-  "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+
     "start": "  parcel index.html",
     "build": "  parcel build index.html",
     "test": "jest"
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3",
     "postcss": "^8.4.30",
     "process": "^0.11.10",
